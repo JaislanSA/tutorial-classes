@@ -13,4 +13,12 @@ export default class Customer {
         this.age = new Date().getFullYear() - birthDate.getFullYear();
         this.birthDate = birthDate;
     }
+    isAdult(){
+        return this.age >= 18;  
+    
+    }
+
+    getFirstName(){
+        return this.nome.split(" ")[0];
+    }
 }
